@@ -37,5 +37,5 @@ interface RuleInterface {
   /**
    * Aplica la actualización del item solo si se cumple el match
    */
-  public function applyTo(Item $item): void;
+  public function applyTo(Item &$item): void;
 }

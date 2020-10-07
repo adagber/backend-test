@@ -40,11 +40,11 @@ class GenericRule implements RuleInterface
     call_user_func_array($this->update, [$item]);
   }
 
-  public function applyTo(Item $item): void
+  public function applyTo(Item &$item): void
   {
     if(true === $this->match($item)){
 
       $this->update($item);
-    }
+    } 
   }
 }
